@@ -1,19 +1,16 @@
-package com.home_works_b15;
+package com.homework1;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.time.Duration;
-import java.util.logging.Level;
 
 public class Arthur {
 

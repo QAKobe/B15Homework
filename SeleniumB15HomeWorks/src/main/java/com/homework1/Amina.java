@@ -1,4 +1,4 @@
-package com.home_works_b15;
+package com.homework1;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -38,6 +38,7 @@ public class Amina {
 
         WebElement submit = driver.findElement(By.xpath("//button[@id='submit']"));
         Thread.sleep(3000);
+
         submit.sendKeys(Keys.ARROW_DOWN);
         submit.click();
 
