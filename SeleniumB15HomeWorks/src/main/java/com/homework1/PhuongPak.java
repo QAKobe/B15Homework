@@ -65,21 +65,21 @@ public class PhuongPak {
         }
 
         List<String> expectedInformation = Arrays.asList
-                ("Name:PHUONG PAK", "Email:p.doan8x@gmail.com", "Current Address:5th Ave, Naperville, IL, 60563", "Permananet Address:860 W, 75th St, Naperville, IL, 60565");
+                ("Name:PHUONG PAK", "Email:p.doan8x@gmail.com", "Current Address :5th Ave, Naperville, IL, 60563", "Permananet Address : 860 W, 75th St, Naperville, IL, 60565");
 
         System.out.println(actualInformation.equals(expectedInformation) ? "information matches" : "information does not match");
         System.out.println("Expected Results");
         for (int i = 0; i < expectedInformation.size(); i++) {
             System.out.println(expectedInformation.get(i));
         }
-
+        System.out.println(expectedInformation.size());
         System.out.println("========================================================");
         System.out.println("Actual Results");
         for (int i = 0; i < actualInformation.size(); i++) {
             System.out.println(actualInformation.get(i));
         }
-
-       // driver.close();
+        System.out.println("actualInformation.size() = " + actualInformation.size());
+        // driver.close();
     }
 
 
