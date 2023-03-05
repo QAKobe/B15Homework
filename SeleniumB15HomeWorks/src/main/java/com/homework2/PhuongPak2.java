@@ -132,13 +132,13 @@ Validate the url has "Products" keyword
         System.out.println(driver.getCurrentUrl());
         Thread.sleep(3000);
         //validate href
-        List<WebElement> allLinkValues = driver.findElements(By.cssSelector(".menu"));
+        List<WebElement> allLinkValues = driver.findElements(By.xpath("//li//a"));
         List<String> expectedLinks = Arrays.asList("Default.aspx", "Products.aspx", "Process.aspx");
         List<String> actualLinks = new ArrayList<>();
-        for (int i = 1; i < allLinkValues.size(); i++) {
+        for (int i = 0; i < allLinkValues.size(); i++) {
             actualLinks.add(allLinkValues.get(i).getAttribute("href"));
 
-            Assert.assertEquals(actualLinks, expectedLinks.get(i));
+            Assert.assertTrue(actualLinks.get(i).contains(expectedLinks.get(i)));
 
         }
         System.out.println(expectedLinks);
